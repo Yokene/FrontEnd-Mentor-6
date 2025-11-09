@@ -72,6 +72,7 @@ span{
     border-radius: 50%;
     font-weight: 600;
     transition: 0.1s ease;
+    cursor: pointer;
 }
 
 .submit-btn{
@@ -85,6 +86,7 @@ span{
     color: hsl(216, 12%, 8%);
     margin-top: 5px;
     transition: 0.1s ease;
+    cursor: pointer;
 }
 
 .btn:hover{
