@@ -1,0 +1,185 @@
+body{
+    background-color: hsl(216, 12%, 8%);
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.display{
+    background-color: hsl(213, 19%, 18%);
+    padding: 30px;
+    border-radius: 30px;
+    height: 300px;
+    width: 300px;
+
+    font-family: 'Overpass', sans-serif;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    
+    display: grid;
+    
+    
+    gap: 18px;
+}
+
+.star{
+    background-color: hsl(213, 19%, 22%);
+    width: 40px;
+    height: 40px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+h2{
+    color: white;
+    margin: 0;
+}
+
+span{
+    color: hsl(217, 12%, 63%);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.star-img{
+    width: 15px;
+    height: auto;
+    justify-content: center;
+}
+
+.buttons{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    width: 45px;
+    height: 45px;
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    background-color: hsl(213, 19%, 22%);
+    border: 0;
+    border-radius: 50%;
+    font-weight: 600;
+    transition: 0.1s ease;
+}
+
+.submit-btn{
+    background-color: hsl(25, 97%, 53%);
+    border: 0;
+    height: 45px;
+    border-radius: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: hsl(216, 12%, 8%);
+    margin-top: 5px;
+    transition: 0.1s ease;
+}
+
+.btn:hover{
+    background-color: white;
+    color: hsl(216, 12%, 8%);
+}
+
+.submit-btn:hover{
+    background-color: white;
+}
+
+.selected-btn{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(216, 12%, 8%);
+
+}
+.selected-btn:hover{
+    background-color: hsl(25, 97%, 53%);
+}
+
+.selected{
+    background-color: hsl(213, 19%, 22%);
+    color: hsl(25, 97%, 53%);
+    width: 160px;
+    border-radius: 10px;
+    height: 20px;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.thanks-screen h2{
+    color: white;
+    padding-top: 10px;
+}
+
+.thanks-screen span{
+    font-size: 16px;
+}
+
+.thanks{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    text-align: center;
+    gap: 20px;
+}
+
+.thanks-screen{
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+@media screen and (max-width: 375px){
+
+    .display{
+        width: 280px;
+        height: 280px;
+    }
+
+    .container{
+        gap: 12px;
+    }
+
+    .btn{
+        width: 42px;
+        height: 42px;
+    }
+
+    span{
+        font-size: 13.5px;
+    }
+
+    .submit-btn{
+        height: 42px;
+    }
+
+
+    .thanks-screen span{
+        font-size: 14px;
+    }
+
+    .selected{
+        height: 28px;
+        border-radius: 14px;
+    }
+
+    .thanks-img{
+        width: 140px;
+    }
+}
